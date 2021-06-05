@@ -1,4 +1,4 @@
-package HomeWork.UniqueWorldVocabulary;
+package HomeWorkVladimirHaiduk.UniqueWorldVocabulary;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

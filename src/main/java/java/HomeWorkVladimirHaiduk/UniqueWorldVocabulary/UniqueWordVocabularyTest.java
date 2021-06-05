@@ -1,5 +1,6 @@
-package HomeWork.UniqueWorldVocabulary;
+package java.HomeWorkVladimirHaiduk.UniqueWorldVocabulary;
 
+import HomeWorkVladimirHaiduk.UniqueWorldVocabulary.UniqueWordVocabulary;
 import junit.framework.TestCase;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -11,9 +12,9 @@ public class UniqueWordVocabularyTest extends TestCase {
     public void testAddWord() {
         vocabulary.addWord("test");
         int expected = 1;
-        if(expected==vocabulary.getWordsCount()){
+        if (expected == vocabulary.getWordsCount()) {
             log.info("Test sucses");
-        } else{
+        } else {
             log.error("Test filed");
         }
     }

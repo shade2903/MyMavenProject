@@ -1,4 +1,4 @@
-package HomeWork.CreditCard;
+package HomeWorkVladimirHaiduk.CreditCard;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -75,14 +75,6 @@ public class CreditCard {
 
     }
 
-    @Override
-    public String toString() {
-        return "CreditCard{" +
-                "number='" + number + '\'' +
-                ", pinCode=" + pinCode +
-                ", balance=" + balance +
-                ", limit=" + limit +
-                ", loanDebt=" + loanDebt +
-                '}';
-    }
+
 }
+
