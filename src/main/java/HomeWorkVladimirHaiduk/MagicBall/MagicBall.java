@@ -10,7 +10,7 @@ import java.util.Random;
 public class MagicBall {
     Logger log = LoggerFactory.getLogger("MagicBall");
     Random value = new Random();
-    int i = value.nextInt(20);
+    private int i = value.nextInt(20);
 
     public List<String> getList() {
         return list;

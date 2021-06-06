@@ -1,20 +1,30 @@
 package HomeWorkVladimirHaiduk.UniqueWorldVocabulary;
 
-import junit.framework.TestCase;
+import HomeWorkVladimirHaiduk.CreditCard.CreditCard;
+import org.junit.Test;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class UniqueWordVocabularyTest extends TestCase {
-    UniqueWordVocabulary vocabulary = new UniqueWordVocabulary();
-    Logger log = LoggerFactory.getLogger("UniqueWordVocabularyTest");
+import static org.junit.Assert.*;
 
-    public void testAddWord() {
+public class UniqueWordVocabularyTest {
+
+    UniqueWordVocabulary vocabulary = new UniqueWordVocabulary();
+
+    @Test
+    public void addWord() {int expected1 = 1;
+        int expected2 = 3;
         vocabulary.addWord("test");
-        int expected = 1;
-        if (expected == vocabulary.getWordsCount()) {
-            log.info("Test sucses");
-        } else {
-            log.error("Test filed");
-        }
+        vocabulary.addWord("test");
+        assertEquals(expected1, vocabulary.getWordsCount());
+        vocabulary.addWord("word");
+        vocabulary.addWord("text");
+        assertEquals(expected2,vocabulary.getWordsCount());
+    }
+
+    @Test
+    public void getWordsCount() {
+        int expected = 0;
+        assertEquals(0,vocabulary.getWordsCount());
     }
 }

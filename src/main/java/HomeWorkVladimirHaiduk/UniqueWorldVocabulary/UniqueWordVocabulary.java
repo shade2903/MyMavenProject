@@ -20,7 +20,6 @@ public class UniqueWordVocabulary {
             list.add(word);
         }
 
-
     }
 
     public int getWordsCount() {

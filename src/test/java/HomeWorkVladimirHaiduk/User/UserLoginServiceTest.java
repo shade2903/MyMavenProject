@@ -15,10 +15,8 @@ public class UserLoginServiceTest {
     public void login() {
         boolean expected = true;
 
-        if (loginService.login(user, "1111") == expected) {
-            log.info("Test success");
-        } else {
-            log.info("Test filed");
-        }
+        boolean actual = loginService.login(user, "1111");
+
+        assertEquals(expected,actual);
     }
 }
