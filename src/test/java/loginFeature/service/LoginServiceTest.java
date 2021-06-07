@@ -96,6 +96,20 @@ public class LoginServiceTest {
         Assert.assertFalse(actualResult);
 
     }
+    @Test
+    public  void restoreAttempts(){
+        user.setLoginAttempts(1);
+        loginService.restoreAttempts(user);
+        Assert.assertEquals(3,user.getLoginAttempts());
+
+
+    }
+    @Test
+    public void after1Incorrect_shouldRestoreAttempts(){
+        loginService.login(user,negativeUserInput);
+        loginService.login(user,negativeUserInput);
+        Assert.assertEquals(3,user.getLoginAttempts());
+    }
 
     private User getUser() {
         User user = new User();

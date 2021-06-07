@@ -28,4 +28,8 @@ public class LoginService {
         user.setBlocked(true);
 
     }
+
+    public void restoreAttempts(User user) {
+        user.setLoginAttempts(3);
+    }
 }
