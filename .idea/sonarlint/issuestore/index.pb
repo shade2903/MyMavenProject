@@ -19,5 +19,3 @@ s
 Csrc/test/java/HomeWorkVladimirHaiduk/CreditCard/CreditCardTest.java,7\c\7ce8f4817d746ec5eb79d43dc9a5285a1bdb3a8c
 „
 Tsrc/main/java/HomeWorkVladimirHaiduk/UniqueWorldVocabulary/UniqueWordVocabulary.java,6\4\64cde335cb65ab1e1f299d9b70f5383363bf788f
-I
-src/main/java/feathure.md,7\2\725ed8c845f562368313e7028478aa5a9ed28da2
