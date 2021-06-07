@@ -21,7 +21,11 @@ public class LoginService {
             blockUser(user);
         }
         reduceLoginAttemps(user);
-        return checkUserPassword(user,userInput);
+        boolean result = checkUserPassword(user, userInput);
+        if(result){
+            restoreAttempts(user);
+        }
+        return result;
     }
 
     public void blockUser(User user) {
